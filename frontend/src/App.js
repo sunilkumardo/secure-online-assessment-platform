@@ -7,14 +7,14 @@ import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <Router>
-      <div style={{ padding: "2rem" }}>
-        <h1>Secure Online Assessment Platform</h1>
-        <nav>
-          <Link to="/signup">Signup</Link> |{" "}
-          <Link to="/login">Login</Link> |{" "}
-          <Link to="/dashboard">Dashboard</Link>
+      <div className="p-8">
+        <h1 className="text-3xl font-bold mb-4">Secure Online Assessment Platform</h1>
+        <nav className="mb-4 space-x-4">
+          <Link className="text-blue-600 hover:underline" to="/signup">Signup</Link>
+          <Link className="text-blue-600 hover:underline" to="/login">Login</Link>
+          <Link className="text-blue-600 hover:underline" to="/dashboard">Dashboard</Link>
         </nav>
-        <hr />
+        <hr className="mb-4" />
 
         <Routes>
           <Route path="/signup" element={<Signup />} />
